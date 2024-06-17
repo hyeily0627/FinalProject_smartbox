@@ -1,0 +1,62 @@
+﻿<Window x:Class="SmartBox.Code"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SmartBox"
+        mc:Ignorable="d"
+        Title="code"  Height="800" Width="400">
+    <Grid Background="#F0F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Title -->
+        <TextBlock Grid.Row="0" Text="코드번호 조회" FontSize="20" HorizontalAlignment="Center" Margin="0,20,0,10"
+                   FontWeight="Bold"/>
+
+        <!-- Content -->
+        <StackPanel Grid.Row="1" VerticalAlignment="Center" HorizontalAlignment="Center">
+            <Grid Margin="0,10">
+                <Border Background="White" CornerRadius="10" Padding="20" Width="300">
+                    <StackPanel Margin="0,20">
+                        <TextBlock Text="1번 택배함" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                        <TextBlock Text="485628" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+            <Grid Margin="0,10">
+                <Border Background="White" CornerRadius="10" Padding="20" Width="300">
+                    <StackPanel Margin="0,20">
+                        <TextBlock Text="2번 택배함" FontSize="16" HorizontalAlignment="Center" Margin="0,0,0,10"/>
+                        <TextBlock Text="5171698" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </Border>
+            </Grid>
+        </StackPanel>
+
+        <!-- Bottom Navigation -->
+        <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,20">
+            <Button Width="100" Margin="10">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Image Source="Icons/set.png" Width="24" Height="24" Margin="0,0,0,5"/>
+                    <TextBlock Text="Setting" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Width="100" Margin="10">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Image Source="Icons/home.png" Width="24" Height="24" Margin="0,0,0,5"/>
+                    <TextBlock Text="Home" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+            <Button Width="100" Margin="10">
+                <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                    <Image Source="Icons/user.png" Width="24" Height="24" Margin="0,0,0,5"/>
+                    <TextBlock Text="MyInfo" HorizontalAlignment="Center"/>
+                </StackPanel>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Window>

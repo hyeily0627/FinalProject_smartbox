@@ -1,0 +1,46 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Icons\home.png" />
+    <None Remove="Icons\logo.png" />
+    <None Remove="Icons\set.png" />
+    <None Remove="Icons\user.png" />
+    <None Remove="Icons\돋보기.png" />
+    <None Remove="Icons\문의.png" />
+    <None Remove="Icons\영상.png" />
+    <None Remove="Icons\위치.png" />
+    <None Remove="map.html" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\위치.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\set.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="GMap.NET.Core" Version="2.1.7" />
+    <PackageReference Include="GMap.NET.WinPresentation" Version="2.1.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Icons\home.png" />
+    <Resource Include="Icons\logo.png" />
+    <Resource Include="Icons\user.png" />
+    <Resource Include="Icons\돋보기.png" />
+    <Resource Include="Icons\문의.png" />
+    <Resource Include="Icons\영상.png" />
+    <Resource Include="map.html" />
+  </ItemGroup>
+
+</Project>
