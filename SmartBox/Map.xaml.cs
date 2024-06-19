@@ -27,6 +27,7 @@ namespace SmartBox
         public Map()
         {
             InitializeComponent();
+            /*
             string currentDirectory = Directory.GetCurrentDirectory();
             string htmlFilePath = System.IO.Path.Combine(currentDirectory, "map.html");
             webBrowser.Navigate(new Uri(htmlFilePath));
@@ -42,7 +43,7 @@ namespace SmartBox
             {
                 regKey.SetValue(System.Diagnostics.Process.GetCurrentProcess().ProcessName + ".exe", browserVerison, RegistryValueKind.DWord);
                 regKey.Close();
-            }
+            }*/
         }
 
     }

@@ -23,5 +23,23 @@ namespace SmartBox
         {
             InitializeComponent();
         }
+
+        private void Btnsearch_Click(object sender, RoutedEventArgs e)
+        {
+            Code code = new Code();
+            code.ShowDialog();
+        }
+
+        private void Btnmap_Click(object sender, RoutedEventArgs e)
+        {
+            Map map = new Map();
+            map.ShowDialog();
+        }
+
+        private void Btnvideo_Click(object sender, RoutedEventArgs e)
+        {
+            Video video = new Video();
+            video.ShowDialog();
+        }
     }
 }

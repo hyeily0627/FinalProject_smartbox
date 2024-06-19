@@ -17,7 +17,6 @@
     <None Remove="Icons\문의.png" />
     <None Remove="Icons\영상.png" />
     <None Remove="Icons\위치.png" />
-    <None Remove="map.html" />
   </ItemGroup>
 
   <ItemGroup>
@@ -40,7 +39,6 @@
     <Resource Include="Icons\돋보기.png" />
     <Resource Include="Icons\문의.png" />
     <Resource Include="Icons\영상.png" />
-    <Resource Include="map.html" />
   </ItemGroup>
 
 </Project>
