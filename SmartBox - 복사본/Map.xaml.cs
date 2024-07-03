@@ -1,7 +1,4 @@
-﻿using GMap.NET.MapProviders;
-using GMap.NET.WindowsPresentation;
-using GMap.NET;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.IO;
 using Microsoft.Win32;
+using GMap.NET.MapProviders;
 
 namespace SmartBox
 {
@@ -27,11 +25,14 @@ namespace SmartBox
         public Map()
         {
             InitializeComponent();
+            GoogleMapProvider.Instance.ApiKey = "AIzaSyBrzkoaZ8RCTJdlNgy1gVY6P9EJH1pMsZc";
         }
+
         private void BtnMenu_Click(object sender, RoutedEventArgs e)
         {
             Menu menuWindow = new Menu();
             menuWindow.Show();
+            this.Close();
         }
 
         private void BtnMyinfo_Click(object sender, RoutedEventArgs e)

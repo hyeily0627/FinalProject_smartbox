@@ -23,11 +23,5 @@ namespace SmartBox
         {
             InitializeComponent();
         }
-
-        private void BtnMenu_Click(object sender, RoutedEventArgs e)
-        {
-            Menu menuWindow = new Menu();
-            menuWindow.Show();
-        }
     }
 }

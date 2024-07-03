@@ -15,19 +15,13 @@ using System.Windows.Shapes;
 namespace SmartBox
 {
     /// <summary>
-    /// Video.xaml에 대한 상호 작용 논리
+    /// QAndAPage.xaml에 대한 상호 작용 논리
     /// </summary>
-    public partial class Video : Window
+    public partial class QAndAPage : Window
     {
-        public Video()
+        public QAndAPage()
         {
             InitializeComponent();
-        }
-
-        private void BtnMenu_Click(object sender, RoutedEventArgs e)
-        {
-            Menu menuWindow = new Menu();
-            menuWindow.Show();
         }
     }
 }

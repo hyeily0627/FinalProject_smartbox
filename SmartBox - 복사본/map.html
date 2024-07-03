@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Ensure that the map takes up the full height of its container */
+        html, body, #map {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <script>
+        function initMap() {
+            // Define the coordinates of the center of the map
+            var myLatLng = { lat: -34.397, lng: 150.644 };
+
+            // Create a map object and specify the DOM element for display.
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: myLatLng,
+                zoom: 8
+            });
+        }
+    </script>
+    <!-- Load the Google Maps JavaScript API -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk30B3_u4uTU-kQUhx5JgobmR8ZG6J7tg&callback=initMap">
+    </script>
+</body>
+</html>
