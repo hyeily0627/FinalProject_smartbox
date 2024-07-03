@@ -29,5 +29,11 @@ namespace SmartBox
             Menu menuWindow = new Menu();
             menuWindow.Show();
         }
+
+        private void BtnMyinfo_Click(object sender, RoutedEventArgs e)
+        {
+            Myinfo myInfoWindow = new Myinfo();
+            myInfoWindow.Show();
+        }
     }
 }

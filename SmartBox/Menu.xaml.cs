@@ -43,11 +43,18 @@ namespace SmartBox
             video.ShowDialog();
         }
 
+
         // 하단 메뉴 함수 
         private void BtnMyinfo_Click(object sender, RoutedEventArgs e)
         {
             Myinfo myInfoWindow = new Myinfo();
             myInfoWindow.Show();
+        }
+
+        private void Btnqustion_Click(object sender, RoutedEventArgs e)
+        {
+            QAndAPage qAndAPage = new QAndAPage();  
+            qAndAPage.Show(); 
         }
     }
 }

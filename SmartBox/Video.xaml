@@ -29,13 +29,14 @@
                 </StackPanel>
             </Button>
             <Button Width="100" Margin="10" BorderThickness="0" BorderBrush="Transparent" Background="Transparent"
-                    x:Name="BtnMenu">
+                    x:Name="BtnMenu" Click="BtnMenu_Click">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                     <Image Source="Icons/home.png" Width="24" Height="24" Margin="0,0,0,5"/>
                     <TextBlock Text="Menu" HorizontalAlignment="Center"/>
                 </StackPanel>
             </Button>
-            <Button Width="100" Margin="10" BorderThickness="0" BorderBrush="Transparent" Background="Transparent">
+            <Button Width="100" Margin="10" BorderThickness="0" BorderBrush="Transparent" Background="Transparent"
+                    x:Name="BtnMyinfo" Click="BtnMyinfo_Click">
                 <StackPanel Orientation="Vertical" HorizontalAlignment="Center" >
                     <Image Source="Icons/user.png" Width="24" Height="24" Margin="0,0,0,5"/>
                     <TextBlock Text="MyInfo" HorizontalAlignment="Center"/>
