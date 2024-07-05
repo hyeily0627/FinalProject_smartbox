@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="smartboxmaui2.MainPage"
+             WidthRequest="400" HeightRequest="800">
+
+    <Grid BackgroundColor="#0078D7">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0" Grid.RowSpan="4" Margin="0,0,0,50">
+            <!-- 모서리가 라운드 처리된 배경 -->
+            <BoxView BackgroundColor="White" CornerRadius="0,0,20,20" />
+
+            <!-- 컨텐츠 -->
+            <StackLayout>
+                <Label Text="Smart Box E TO 13" FontSize="18" FontAttributes="Bold" Margin="0,40,0,0" TextColor="Black" 
+                       HorizontalOptions="Center"/>
+                <Image Source="logo.png" HeightRequest="185" HorizontalOptions="Center"/>
+                <Label Text="스마트 무인택배함을 이용해보세요" FontSize="20" FontAttributes="Bold" Margin="0,30,0,0"
+                       TextColor="Black" HorizontalOptions="Center"/>
+                <Label Text="언제 어디서든 물건을 안전하게 수령 가능합니다.
+                              
+                             
+                       
+                       바닥에 방치되는 물건은 그만!
+                              
+                       이제 스마트택배함과 함께 하세요" 
+                       FontSize="15" Margin="0,40,0,0" TextColor="Black" 
+                       HorizontalOptions="Center" VerticalOptions="Center"
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <!-- 번호 입력 받는 부분-->
+                    <Frame CornerRadius="5" 
+                           BorderColor="Gray"
+                           Padding="0"
+                           BackgroundColor="white"
+                           Margin="10,20,0,0">
+                        <Entry x:Name="PhoneNumberEntry"
+                               HeightRequest="40" 
+                               WidthRequest="250" 
+                               HorizontalOptions="FillAndExpand"
+                               Placeholder="010-xxxx-xxxx 형식으로 입력해주세요"
+                               FontSize="12"
+                               TextColor="Black"/>
+                        <!-- 텍스트 색상을 검정색으로 설정 -->
+                    </Frame>
+                    <!-- 입력 버튼 -->
+                    <Button x:Name="BtnSubmit" Text="입력" 
+                            WidthRequest="70" 
+                            HeightRequest="40" 
+                            HorizontalOptions="Center" 
+                            Margin="10,20,10,0"
+                            TextColor="White"
+                            BackgroundColor="#0078D7"
+                            Clicked="BtnSubmit_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>
