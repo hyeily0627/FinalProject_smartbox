@@ -1,0 +1,77 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="smartboxmaui2.CodeNumberPage"
+             Title="코드번호 조회">
+
+    <Grid Padding="20" BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="1*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <!-- 첫 번째 택배함 -->
+        <Frame Grid.Row="0" Grid.Column="0" BorderColor="Gray" CornerRadius="10" Margin="10,10,10,0"
+               HeightRequest="200" WidthRequest="180">
+            <StackLayout>
+                <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
+                <Label Text="1번 택배함" HorizontalOptions="Center"/>
+                <Label x:Name="CodeNumber1" Text="코드번호1" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- 두 번째 택배함 -->
+        <Frame Grid.Row="0" Grid.Column="1" BorderColor="Gray" CornerRadius="10" Margin="10,10,10,0"
+              HeightRequest="200" WidthRequest="180">
+            <StackLayout>
+                <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
+                <Label Text="2번 택배함" HorizontalOptions="Center"/>
+                <Label x:Name="CodeNumber2" Text="코드번호2" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- 세 번째 택배함 -->
+        <Frame Grid.Row="1" Grid.Column="0" BorderColor="Gray" CornerRadius="10"  Margin="10,10,10,0"
+               HeightRequest="200" WidthRequest="180">
+            <StackLayout>
+                <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
+                <Label Text="3번 택배함" HorizontalOptions="Center"/>
+                <Label x:Name="CodeNumber3" Text="코드번호3" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- 네 번째 택배함 -->
+        <Frame Grid.Row="1" Grid.Column="1" BorderColor="Gray" CornerRadius="10" Margin="10,10,10,0"
+               HeightRequest="200" WidthRequest="180">
+            <StackLayout>
+                <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
+                <Label Text="4번 택배함" HorizontalOptions="Center"/>
+                <Label x:Name="CodeNumber4" Text="코드번호4" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- 하단 메뉴 바 -->
+        <Frame Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="White" Padding="0" Margin="-20,20,-20,-20"
+               CornerRadius="0" >
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="0">
+                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="Setting" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="Home" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="MyInfo" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>

@@ -1,6 +1,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="smartboxmaui2.MenuPage">
+             x:Class="smartboxmaui2.MenuPage"
+             WidthRequest="400" HeightRequest="800">
 
     <Grid BackgroundColor="White">
         <Grid.RowDefinitions>
@@ -12,26 +13,70 @@
         </Grid.RowDefinitions>
 
         <!-- 첫 번째 메뉴: 코드번호 조회 -->
-        <Button Grid.Row="0" Text="코드번호 조회" BackgroundColor="#BBDEFB" 
-                FontSize="20" FontAttributes="Bold" Margin="30"/>
+        <Button Grid.Row="0" BackgroundColor="#BBDEFB" FontSize="18" 
+                FontAttributes="Bold" Margin="50,20,50,20"
+                WidthRequest="250" HeightRequest="80"
+                x:Name="BtnCode" Clicked="BtnCode_Clicked">
+            <Button.ImageSource>
+                <FileImageSource File="magnifierwhite.png"/>
+            </Button.ImageSource>
+            <Button.Text>
+                코드번호 조회
+            </Button.Text>
+        </Button>
 
         <!-- 두 번째 메뉴: 택배함 위치 조회 -->
-        <Button Grid.Row="1" Text="택배함 위치 조회" BackgroundColor="#64B5F6" 
-                FontSize="20" FontAttributes="Bold" Margin="30"/>
+        <Button Grid.Row="1" BackgroundColor="#64B5F6" FontSize="18" 
+                FontAttributes="Bold" Margin="50,20,50,20"
+                WidthRequest="250" HeightRequest="80">
+            <Button.ImageSource>
+                <FileImageSource File="locationwhite.png"/>
+            </Button.ImageSource>
+            <Button.Text>
+                택배함 위치 조회
+            </Button.Text>
+        </Button>
 
         <!-- 세 번째 메뉴: 택배함 내 영상 -->
-        <Button Grid.Row="2" Text="택배함 내 영상" BackgroundColor="#2196F3" 
-                FontSize="20" FontAttributes="Bold" Margin="30"/>
-
+        <Button Grid.Row="2" BackgroundColor="#2196F3" FontSize="18" 
+                FontAttributes="Bold" Margin="50,20,50,20"
+                WidthRequest="250" HeightRequest="80">
+            <Button.ImageSource>
+                <FileImageSource File="camera.png"/>
+            </Button.ImageSource>
+            <Button.Text>
+                택배함 내 영상
+            </Button.Text>
+        </Button>
         <!-- 네 번째 메뉴: 문의사항 -->
-        <Button Grid.Row="3" Text="문의사항" BackgroundColor="#1976D2" 
-                FontSize="20" FontAttributes="Bold" Margin="30"/>
+        <Button Grid.Row="3" BackgroundColor="#1976D2" FontSize="18" 
+                FontAttributes="Bold" Margin="50,20,50,20"
+                WidthRequest="250" HeightRequest="80"
+                x:Name="BtnInquery" Clicked="BtnInquery_Clicked">
+            <Button.ImageSource>
+                <FileImageSource File="question.png"/>
+            </Button.ImageSource>
+            <Button.Text>
+                문의사항
+            </Button.Text>
+        </Button>
 
         <!-- 하단 메뉴 바 -->
-        <StackLayout Grid.Row="4" Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
-            <Button Text="Setting" BackgroundColor="LightGray" Margin="10,10,30,10"/>
-            <Button Text="Home" BackgroundColor="LightGray" Margin="30,10,30,10"/>
-            <Button Text="MyInfo" BackgroundColor="LightGray" Margin="30,10,10,10"/>
-        </StackLayout>
+        <Frame Grid.Row="4" BackgroundColor="White" Padding="0" Margin="0,0,0,0">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="Setting" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="Home" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="MyInfo" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
     </Grid>
 </ContentPage>

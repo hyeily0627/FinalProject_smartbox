@@ -1,0 +1,66 @@
+<!-- 문의사항 페이지 -->
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="smartboxmaui2.InquiryPage"
+             WidthRequest="400" HeightRequest="800">
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- 자주 묻는 질문 -->
+        <ScrollView Grid.Row="0">
+            <StackLayout Margin="20">
+                <Label Text="자주 묻는 질문" FontSize="20" FontAttributes="Bold" Margin="0,10,0,20"/>
+                <!-- 여기에 자주 묻는 질문 항목들을 추가 -->
+                <Label Text="Q1. 자주 묻는 질문 내용 1" FontSize="16" Margin="0,0,0,10"/>
+                <Label Text="A1. 답변 내용 1" FontSize="14" Margin="0,0,0,20"/>
+                <Label Text="Q2. 자주 묻는 질문 내용 2" FontSize="16" Margin="0,0,0,10"/>
+                <Label Text="A2. 답변 내용 2" FontSize="14" Margin="0,0,0,20"/>
+                <Label Text="Q3. 자주 묻는 질문 내용 3" FontSize="16" Margin="0,0,0,10"/>
+                <Label Text="A3. 답변 내용 3" FontSize="14" Margin="0,0,0,20"/>
+                <Label Text="Q4. 자주 묻는 질문 내용 4" FontSize="16" Margin="0,0,0,10"/>
+                <Label Text="A4. 답변 내용 4" FontSize="14" Margin="0,0,0,20"/>
+                <Label Text="Q5. 자주 묻는 질문 내용 5" FontSize="16" Margin="0,0,0,10"/>
+                <Label Text="A5. 답변 내용 5" FontSize="14" Margin="0,0,0,20"/>
+                <Label Text="Q6. 자주 묻는 질문 내용 6" FontSize="16" Margin="0,0,0,10"/>
+                <Label Text="A6. 답변 내용 6" FontSize="14" Margin="0,0,0,20"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!-- 개발자에게 질문하기 -->
+        <StackLayout Grid.Row="1" Margin="20">
+            <Label Text="개발자에게 질문하기" FontSize="20" FontAttributes="Bold" Margin="0,10,0,20"/>
+
+            <!-- 질문 입력 -->
+            <Entry x:Name="QuestionEntry" Placeholder="질문 내용은 여기에 입력합니다" Margin="0,0,0,20"/>
+
+            <!-- 이메일 회신 안내 -->
+            <Label Text="답변 내용은 MyInfo에 등록된 이메일로 회신됩니다." FontSize="14" Margin="0,0,0,20"/>
+
+            <!-- SAVE 버튼 -->
+            <Button Text="SAVE" BackgroundColor="#1976D2" TextColor="White" />
+        </StackLayout>
+
+        <!-- 하단 메뉴 바 -->
+        <Frame Grid.Row="2" BackgroundColor="White" Padding="0" Margin="0,0,0,0">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="Setting" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="Home" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
+                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <Label Text="MyInfo" HorizontalOptions="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </Grid>
+</ContentPage>
