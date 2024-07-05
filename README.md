@@ -13,6 +13,4 @@
   - 번호창 유효성 검사 설정
   - 입력버튼 클릭시 다음 메뉴창으로 전환
 - 구현 이미지
-  
-![mainpage](https://raw.githubusercontent.com/hyeily0627/FinalProject_smartbox/main/images/001.png) 
-![mainpageError](https://raw.githubusercontent.com/hyeily0627/FinalProject_smartbox/main/images/002.png) 
+
