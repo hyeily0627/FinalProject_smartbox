@@ -5,7 +5,7 @@
 ## 사용 툴 : Figma
 - 전체기간 : 2024-05-27 ~ 2024-06-03
 
-![피그마](https://raw.githubusercontent.com/hyeily0627/FinalProject_smartbox/main/images/001.png) 
+![피그마](https://raw.githubusercontent.com/hyeily0627/FinalProject_smartbox/main/images/003.png) 
 
 # WPF로 작업
 ## 사용 툴 : Visual code - WPF애플리케이션
