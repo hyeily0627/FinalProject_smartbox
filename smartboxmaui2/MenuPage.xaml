@@ -28,7 +28,8 @@
         <!-- 두 번째 메뉴: 택배함 위치 조회 -->
         <Button Grid.Row="1" BackgroundColor="#64B5F6" FontSize="18" 
                 FontAttributes="Bold" Margin="50,20,50,20"
-                WidthRequest="250" HeightRequest="80">
+                WidthRequest="250" HeightRequest="80"
+                x:Name="BtnMap" Clicked="BtnMap_Clicked">
             <Button.ImageSource>
                 <FileImageSource File="locationwhite.png"/>
             </Button.ImageSource>
@@ -40,7 +41,8 @@
         <!-- 세 번째 메뉴: 택배함 내 영상 -->
         <Button Grid.Row="2" BackgroundColor="#2196F3" FontSize="18" 
                 FontAttributes="Bold" Margin="50,20,50,20"
-                WidthRequest="250" HeightRequest="80">
+                WidthRequest="250" HeightRequest="80"
+                x:Name="BtnCctv" Clicked="BtnCctv_Clicked">
             <Button.ImageSource>
                 <FileImageSource File="camera.png"/>
             </Button.ImageSource>
@@ -51,7 +53,7 @@
         <!-- 네 번째 메뉴: 문의사항 -->
         <Button Grid.Row="3" BackgroundColor="#1976D2" FontSize="18" 
                 FontAttributes="Bold" Margin="50,20,50,20"
-                WidthRequest="250" HeightRequest="80"
+                WidthRequest="250" HeightRequest="70"
                 x:Name="BtnInquery" Clicked="BtnInquery_Clicked">
             <Button.ImageSource>
                 <FileImageSource File="question.png"/>
@@ -65,15 +67,18 @@
         <Frame Grid.Row="4" BackgroundColor="White" Padding="0" Margin="0,0,0,0">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="ImgBtnSet" Clicked="ImgBtnSet_Clicked"/>
                     <Label Text="Setting" HorizontalOptions="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"/>
-                    <Label Text="Home" HorizontalOptions="Center"/>
+                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 />
+                    <Label Text="Menu" HorizontalOptions="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="ImgBtnMyinfo" Clicked="ImgBtnMyinfo_Clicked"/>
                     <Label Text="MyInfo" HorizontalOptions="Center"/>
                 </StackLayout>
             </StackLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="smartboxmaui2.SettingsPage">
+
+    <StackLayout Padding="10" BackgroundColor="White">
+
+        <!-- 상단: 페이지 제목 -->
+        <Label Text="Settings" FontSize="24" HorizontalOptions="Center" VerticalOptions="Start" Margin="0,20,0,20"/>
+
+        <!-- 알림 스위치 -->
+        <Grid Padding="0,10">
+            <Label Text="Notification" VerticalOptions="Center" FontSize="18"/>
+            <Switch x:Name="NotificationSwitch" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- 다크모드 스위치 -->
+        <Grid Padding="0,10">
+            <Label Text="Dark Mode" VerticalOptions="Center" FontSize="18"/>
+            <Switch x:Name="DarkModeSwitch" HorizontalOptions="End" VerticalOptions="Center"/>
+        </Grid>
+
+        <!-- 언어설정 버튼 -->
+        <Grid Padding="0,10">
+            <Label Text="Language" VerticalOptions="Center" FontSize="18"/>
+            <Button Text=">" HorizontalOptions="End" VerticalOptions="Center" />
+        </Grid>
+
+        <!-- 회원탈퇴 버튼 -->
+        <Grid Padding="0,10">
+            <Label Text="Delete Account" VerticalOptions="Center" FontSize="18" TextColor="Red"/>
+            <Button Text=">" HorizontalOptions="End" VerticalOptions="Center" />
+        </Grid>
+    </StackLayout>
+
+</ContentPage>

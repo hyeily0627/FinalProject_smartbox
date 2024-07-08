@@ -24,10 +24,6 @@
                 <Label Text="A3. 답변 내용 3" FontSize="14" Margin="0,0,0,20"/>
                 <Label Text="Q4. 자주 묻는 질문 내용 4" FontSize="16" Margin="0,0,0,10"/>
                 <Label Text="A4. 답변 내용 4" FontSize="14" Margin="0,0,0,20"/>
-                <Label Text="Q5. 자주 묻는 질문 내용 5" FontSize="16" Margin="0,0,0,10"/>
-                <Label Text="A5. 답변 내용 5" FontSize="14" Margin="0,0,0,20"/>
-                <Label Text="Q6. 자주 묻는 질문 내용 6" FontSize="16" Margin="0,0,0,10"/>
-                <Label Text="A6. 답변 내용 6" FontSize="14" Margin="0,0,0,20"/>
             </StackLayout>
         </ScrollView>
 
@@ -49,15 +45,18 @@
         <Frame Grid.Row="2" BackgroundColor="White" Padding="0" Margin="0,0,0,0">
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="BtnSet" Clicked="BtnSet_Clicked"/>
                     <Label Text="Setting" HorizontalOptions="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"/>
-                    <Label Text="Home" HorizontalOptions="Center"/>
+                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="ImgBtnMenu" Clicked="ImgBtnMenu_Clicked"/>
+                    <Label Text="Menu" HorizontalOptions="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="BtnMyinfo" Clicked="BtnMyinfo_Clicked"/>
                     <Label Text="MyInfo" HorizontalOptions="Center"/>
                 </StackLayout>
             </StackLayout>

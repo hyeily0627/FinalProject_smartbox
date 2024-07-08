@@ -21,7 +21,7 @@
             <StackLayout>
                 <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
                 <Label Text="1번 택배함" HorizontalOptions="Center"/>
-                <Label x:Name="CodeNumber1" Text="코드번호1" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+                <Label x:Name="CodeNumber1" Text="--------" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
             </StackLayout>
         </Frame>
 
@@ -31,7 +31,7 @@
             <StackLayout>
                 <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
                 <Label Text="2번 택배함" HorizontalOptions="Center"/>
-                <Label x:Name="CodeNumber2" Text="코드번호2" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+                <Label x:Name="CodeNumber2" Text="--------" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
             </StackLayout>
         </Frame>
 
@@ -41,7 +41,7 @@
             <StackLayout>
                 <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
                 <Label Text="3번 택배함" HorizontalOptions="Center"/>
-                <Label x:Name="CodeNumber3" Text="코드번호3" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+                <Label x:Name="CodeNumber3" Text="--------" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
             </StackLayout>
         </Frame>
 
@@ -51,7 +51,7 @@
             <StackLayout>
                 <Image Source="box.png" HorizontalOptions="Center" HeightRequest="100" Margin="0,0,0,10"/>
                 <Label Text="4번 택배함" HorizontalOptions="Center"/>
-                <Label x:Name="CodeNumber4" Text="코드번호4" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
+                <Label x:Name="CodeNumber4" Text="--------" HorizontalOptions="Center" FontSize="24" TextColor="Black"/>
             </StackLayout>
         </Frame>
 
@@ -60,15 +60,18 @@
                CornerRadius="0" >
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="0">
-                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="ImgBtnSet" Clicked="ImgBtnSet_Clicked"/>
                     <Label Text="Setting" HorizontalOptions="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"/>
-                    <Label Text="Home" HorizontalOptions="Center"/>
+                    <ImageButton Source="home.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="ImgBtnMenu" Clicked="ImgBtnMenu_Clicked"/>
+                    <Label Text="Menu" HorizontalOptions="Center"/>
                 </StackLayout>
                 <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
-                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"/>
+                    <ImageButton Source="user.png" BackgroundColor="Transparent" HeightRequest="30"
+                                 x:Name="ImgBtnMyinfo" Clicked="ImgBtnMyinfo_Clicked"/>
                     <Label Text="MyInfo" HorizontalOptions="Center"/>
                 </StackLayout>
             </StackLayout>

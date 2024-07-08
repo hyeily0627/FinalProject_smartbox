@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="smartboxmaui2.MyInfoPage"
+             BackgroundColor="White">
+
+    <StackLayout Padding="20">
+
+        <!-- 사용자 프로필 섹션 -->
+        <Frame CornerRadius="10" Padding="20" BackgroundColor="#E3F2FD">
+            <StackLayout>
+                <Image Source="infouser.png" HeightRequest="100" WidthRequest="100" HorizontalOptions="Center"/>
+                <Label Text="사용자 번호(자동생성)" FontSize="24" FontAttributes="Bold" HorizontalOptions="Center"/>
+
+                <!-- 이메일 주소와 등록 버튼 -->
+                <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                    <Entry Placeholder="이메일을 입력하세요" Margin="0,0,0,10" WidthRequest="200"/>
+                    <Button Text="저장" VerticalOptions="Center" Margin="10"
+                            FontSize="15"
+                            HeightRequest="40"/>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+
+        <!-- 최근 활동 섹션 -->
+        <Frame CornerRadius="10" Padding="20" BackgroundColor="#E3F2FD" Margin="0,20,0,0">
+            <StackLayout>
+                <Label Text="최근 활동" FontSize="18" FontAttributes="Bold" HorizontalOptions="Start"/>
+                <Label Text="최근 어플 접속: 2023-07-08" FontSize="16"/>
+                <Label Text="최근 택배함 이용: 2023-07-07" FontSize="16"/>
+            </StackLayout>
+        </Frame>
+
+        <!-- 비밀번호 변경 버튼 -->
+        <Button Text="기기(번호) 변경" FontSize="18" BackgroundColor="#64B5F6" TextColor="White" Margin="0,20,0,0" />
+
+        <!-- 로그아웃 버튼 -->
+        <Button Text="로그아웃" FontSize="18" BackgroundColor="#E53935" TextColor="White" Margin="0,20,0,0"/>
+    </StackLayout>
+
+</ContentPage>
