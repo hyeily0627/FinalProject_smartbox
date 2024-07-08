@@ -20,4 +20,12 @@
   - 앱 첫화면 구현 (MainPage.xaml) [mainpage](https://raw.githubusercontent.com/hyeily0627/FinalProject_smartbox/main/images/001.png) 
     - 번호창 유효성 검사 설정 [mainpageError](https://raw.githubusercontent.com/hyeily0627/FinalProject_smartbox/main/images/002.png) 
     - 입력버튼 클릭시 다음 메뉴창으로 전환
-  - 메뉴창 구현(MenuPage.xaml) 
+  - 메뉴창 구현(MenuPage.xaml)
+  - 코드번호 확인창 구현(CodeNumberPage.xaml)
+- 2024-07-08
+  - 택배함 위치 확인창 구현(MapPage.xaml)
+  
+  - 내정보 페이지 구현(MyInfoPage.xaml)
+  - 설정 페이지 구현(SettingsPage.xaml)
+  - 클릭이벤트 연결 확인
+  - 🚨 택배함 영상 확인창은 CAM 및 DB 연결 좀 더 연구 후 제작 
