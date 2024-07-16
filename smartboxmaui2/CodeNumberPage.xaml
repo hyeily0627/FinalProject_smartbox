@@ -59,7 +59,7 @@
         <Frame Grid.Row="3" Grid.ColumnSpan="2" BackgroundColor="White" Padding="0" Margin="-20,20,-20,-20"
                CornerRadius="0" >
             <StackLayout Orientation="Horizontal" HorizontalOptions="Center" VerticalOptions="End">
-                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="0">
+                <StackLayout Orientation="Vertical" HorizontalOptions="Center" VerticalOptions="Center" Margin="5">
                     <ImageButton Source="set.png" BackgroundColor="Transparent" HeightRequest="30"
                                  x:Name="ImgBtnSet" Clicked="ImgBtnSet_Clicked"/>
                     <Label Text="Setting" HorizontalOptions="Center"/>
